@@ -58,8 +58,8 @@
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/card_view_insurance"
             android:layout_width="match_parent"
-            android:layout_marginTop="24dp"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 style="@style/Card"
@@ -104,8 +104,8 @@
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/card_view_anniversary"
             android:layout_width="match_parent"
-            android:layout_marginTop="24dp"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 style="@style/Card"
