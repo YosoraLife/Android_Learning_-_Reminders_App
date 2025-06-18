@@ -1,10 +1,8 @@
 package com.example.remindersapp
 
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import androidx.appcompat.content.res.AppCompatResources
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.adapter.FragmentStateAdapter
@@ -24,8 +22,14 @@ class MainActivity : AppCompatActivity() {
 
         TabLayoutMediator(binding.tabLayout, binding.viewPager) { tab, position ->
             when (position) {
-                0 -> tab.text = "General"
-                1 -> tab.text = "Password"
+                0 -> {
+                    tab.text = "General"
+                    tab.icon = AppCompatResources.getDrawable(this, R.drawable.ic_general_24)
+                }
+                1 -> {
+                    tab.text = "Password"
+                    tab.icon = AppCompatResources.getDrawable(this, R.drawable.ic_passwords_24)
+                }
             }
         }.attach()
     }
