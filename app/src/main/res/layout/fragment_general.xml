@@ -12,7 +12,7 @@
         android:padding="24dp">
 
         <com.google.android.material.card.MaterialCardView
-            android:id="@+id/card_view_wifi"
+            android:id="@+id/card_view_bin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
@@ -22,40 +22,40 @@
                 android:padding="20dp">
 
                 <ImageView
-                    android:id="@+id/image_view_wifi"
+                    android:id="@+id/image_view_bin"
                     style="@style/Icon"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_wifi_24"
+                    android:src="@drawable/ic_bin_24"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/text_view_wifi_heading"
+                    android:id="@+id/text_view_bin_day_heading"
                     style="@style/Text.Heading"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
-                    android:text="Wifi Password"
-                    app:layout_constraintStart_toEndOf="@id/image_view_wifi"
+                    android:text="Bin Day"
+                    app:layout_constraintStart_toEndOf="@id/image_view_bin"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/text_view_wifi_value"
+                    android:id="@+id/text_view_bin_day_value"
                     style="@style/Text.Value"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:layout_constraintStart_toStartOf="@id/text_view_wifi_heading"
-                    app:layout_constraintTop_toBottomOf="@id/text_view_wifi_heading"
-                    tools:text="MyWifiPassword" />
+                    app:layout_constraintStart_toStartOf="@id/text_view_bin_day_heading"
+                    app:layout_constraintTop_toBottomOf="@id/text_view_bin_day_heading"
+                    tools:text="Friday" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </com.google.android.material.card.MaterialCardView>
 
         <com.google.android.material.card.MaterialCardView
-            android:id="@+id/card_view_tablet_pin"
+            android:id="@+id/card_view_insurance"
             android:layout_width="match_parent"
             android:layout_marginTop="24dp"
             android:layout_height="wrap_content">
@@ -66,41 +66,41 @@
                 android:padding="20dp">
 
                 <ImageView
-                    android:id="@+id/image_view_tablet_pin"
+                    android:id="@+id/image_view_insurance"
                     style="@style/Icon"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_tablet_24"
+                    android:src="@drawable/ic_insurance_24"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.466" />
 
                 <TextView
-                    android:id="@+id/text_view_tablet_pin_heading"
+                    android:id="@+id/text_view_insurance_heading"
                     style="@style/Text.Heading"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
-                    android:text="Tablet PIN"
-                    app:layout_constraintStart_toEndOf="@id/image_view_tablet_pin"
+                    android:text="National Insurance No."
+                    app:layout_constraintStart_toEndOf="@id/image_view_insurance"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/text_view_tablet_pin_value"
+                    android:id="@+id/text_view_insurance_value"
                     style="@style/Text.Value"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:layout_constraintStart_toStartOf="@id/text_view_tablet_pin_heading"
-                    app:layout_constraintTop_toBottomOf="@id/text_view_tablet_pin_heading"
-                    tools:text="MyTabletPin" />
+                    app:layout_constraintStart_toStartOf="@id/text_view_insurance_heading"
+                    app:layout_constraintTop_toBottomOf="@id/text_view_insurance_heading"
+                    tools:text="AB 12 34 56 C" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </com.google.android.material.card.MaterialCardView>
 
         <com.google.android.material.card.MaterialCardView
-            android:id="@+id/card_view_bike_lock"
+            android:id="@+id/card_view_anniversary"
             android:layout_width="match_parent"
             android:layout_marginTop="24dp"
             android:layout_height="wrap_content">
@@ -111,33 +111,33 @@
                 android:padding="20dp">
 
                 <ImageView
-                    android:id="@+id/image_view_bike_lock"
+                    android:id="@+id/image_view_anniversary"
                     style="@style/Icon"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_bike_24"
+                    android:src="@drawable/ic_anniversary_24"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/text_view_bike_lock_heading"
+                    android:id="@+id/text_view_anniversary_heading"
                     style="@style/Text.Heading"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
-                    android:text="Bike Lock"
-                    app:layout_constraintStart_toEndOf="@id/image_view_bike_lock"
+                    android:text="Wedding Anniversary"
+                    app:layout_constraintStart_toEndOf="@id/image_view_anniversary"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/text_view_bike_lock_value"
+                    android:id="@+id/text_view_anniversary_value"
                     style="@style/Text.Value"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:layout_constraintStart_toStartOf="@id/text_view_bike_lock_heading"
-                    app:layout_constraintTop_toBottomOf="@id/text_view_bike_lock_heading"
-                    tools:text="MyBikeLock" />
+                    app:layout_constraintStart_toStartOf="@id/text_view_anniversary_heading"
+                    app:layout_constraintTop_toBottomOf="@id/text_view_anniversary_heading"
+                    tools:text="25th December 2010" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
