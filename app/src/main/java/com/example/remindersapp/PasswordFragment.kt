@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.content.edit
 import androidx.fragment.app.Fragment
 import com.example.remindersapp.databinding.DialogEditReminderBinding
 import com.example.remindersapp.databinding.FragmentPasswordBinding
@@ -40,10 +41,14 @@ class PasswordFragment: Fragment() {
 
     private fun showEditDialog(preferenceKey: String) {
         val dialogBinding = DialogEditReminderBinding.inflate(requireActivity().layoutInflater)
+        dialogBinding.editTextValue.setText(preferences.getString(preferenceKey, null))
         MaterialAlertDialogBuilder(requireContext())
             .setTitle("Update value")
             .setView(dialogBinding.root)
-            .setPositiveButton("Save") { _, _ -> }
+            .setPositiveButton("Save") { _, _ ->
+                preferences.edit { putString(preferenceKey, dialogBinding.editTextValue.text?.toString()) }
+                displayValues()
+            }
             .setNegativeButton("Cancel") { _, _ -> }
             .show()
     }
